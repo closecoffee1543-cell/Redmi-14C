@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redmi 14C</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 600% 600%;
+      animation: bgMove 15s ease infinite;
+      color: #ffffff;
+      cursor: none;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .page {
+      display: none;
+      min-height: 100vh;
+      padding: 40px;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2, h3 {
+      color: #00eaff;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 260px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 12px 25px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 25px;
+      background: #00eaff;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00eaff;
+    }
+
+    a {
+      color: #00ff99;
+    }
+
+    /* Animated cursor */
+    .cursor {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #00eaff;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease;
+      z-index: 9999;
+    }
+  </style>
+
+  <script>
+    function showPage(id) {
+      var pages = document.getElementsByClassName("page");
+      for (var i = 0; i < pages.length; i++) {
+        pages[i].style.display = "none";
+      }
+      document.getElementById(id).style.display = "block";
+    }
+
+    document.addEventListener("mousemove", function(e) {
+      const cursor = document.querySelector(".cursor");
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+  </script>
+</head>
+
+<body onload="showPage('page1')">
+
+<div class="cursor"></div>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page">
+<h1>If you want to buy REDMI 14C !!! you are in the best place</h1>
+<h2>You can pay cash or visa and etc.</h2>
+<h2>Here are the details</h2>
+<h3>
+The Xiaomi Redmi 14C features a 6.88-inch display, Snapdragon 4 Gen 2 chipset, 5160 mAh battery, and a versatile camera system, making it a solid choice for budget-conscious users.
+</h3>
+<h3>If you are interested, you can find it here with us.</h3>
+<button onclick="showPage('page2')">Go to Sign Up Page</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+<h2>Now fill the following</h2>
+<h2>Name</h2>
+<input type="text" placeholder="Enter your Name">
+<h2>E-mail</h2>
+<input type="email" placeholder="Enter your E-mail">
+<h2>Password</h2>
+<input type="password" placeholder="Enter your Password">
+<h1>We can chat with you on WhatsApp:<br>+20 1097201280</h1>
+<button onclick="showPage('page3')">Submit</button>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+<h1>Your DATA is saved in our servers</h1>
+<h2>Now you should fill this again exactly like before</h2>
+<h2>Name</h2>
+<input type="text" placeholder="Enter your Name">
+<h2>E-mail</h2>
+<input type="email" placeholder="Enter your E-mail">
+<h2>Password</h2>
+<input type="password" placeholder="Enter your Password">
+<br><br>
+<button onclick="showPage('page4')">Login</button>
+</div>
+
+<!-- PAGE 4 -->
+<div id="page4" class="page">
+<h1>Now click on buy to buy REDMI 14C</h1>
+<h2>Click now why you are waiting the stock is going away faster faster !!!</h2>
+<br><br>
+<button onclick="showPage('page5')">BUY NOW</button>
+</div>
+
+<!-- PAGE 5 -->
+<div id="page5" class="page">
+<h1>Now you should fill this gaps and after submit you will get the phone</h1>
+<h2>Paying way</h2>
+<input type="text" placeholder="Enter Paying way">
+<h1>If it is by Visa, PayPal, etc.</h1>
+<h2>Password of (Paying way)</h2>
+<input type="password" placeholder="Enter password of (Paying way)">
+<h2>Click confirm to buy it</h2>
+<button onclick="showPage('page6')">Confirm</button>
+</div>
+
+<!-- PAGE 6 -->
+<div id="page6" class="page">
+<h1>Here is the link to buy it</h1>
+<h2>Best color / higher-spec (8 GB RAM + 256 GB, Midnight Black)</h2>
+<p>
+<a href="https://www.amazon.eg/Redmi-14C-8GB-256GB-Black" target="_blank">🔗 Redmi 14C 8GB/256GB Black – Amazon.eg (best color/higher storage)</a>
+<br>
+(Higher memory/storage, stylish Midnight Black — usually a popular choice.)
+</p>
+
+<p>
+Cheapest available option (4 GB RAM + 128 GB)
+<br>
+<a href="https://www.amazon.eg/Redmi-14C-4GB-128GB-Black" target="_blank">🔗 Redmi 14C 4GB/128GB Black – Amazon.eg (cheapest standard version)</a>
+<br>
+(Lower RAM/storage make it cheaper but still full phone.)
+</p>
+
+<p>
+Another Amazon option (might differ in spec or price)
+<br>
+<a href="https://www.amazon.eg/Redmi-14C-8GB-256GB" target="_blank">🔗 Redmi 14C 8GB/256GB – Amazon.eg (another listing)</a>
+<br>
+(Same spec as first but sometimes different listing or price.)
+</p>
+
+<h2>Best-spec & color (8 GB RAM + 256 GB, Sage Green)</h2>
+<p>
+<a href="https://www.noon.com/egypt/Redmi-14C-8GB-256GB-Sage-Green" target="_blank">🔗 Redmi 14C 8GB/256GB Sage Green – Noon.com Egypt</a>
+<br>
+(Larger storage & RAM + attractive Sage Green color.)
+</p>
+
+<p>
+Cheapest mid-range version (4 GB RAM + 128 GB, Starry Blue)
+<br>
+<a href="https://www.noon.com/egypt/Redmi-14C-4GB-128GB-Starry-Blue" target="_blank">🔗 Redmi 14C 4GB/128GB Starry Blue – Noon.com Egypt</a>
+<br>
+(Lower spec but cheaper and in a nice color.)
+</p>
+
+<p>
+Another Noon listing of a popular version
+<br>
+<a href="https://www.noon.com/egypt/Redmi-14C" target="_blank">🔗 Redmi 14C on Noon (general) – Noon.com Egypt</a>
+<br>
+(Same place — to check if specs/colors updated.)
+</p>
+
+<h2>Redmi 14C – 8 GB RAM + 256 GB storage (international/generic listing)</h2>
+<p>
+<a href="https://www.temu.com/sa/شاومي-ريدمي-14c-8-256gb-4g-lte" target="_blank">🔗 Redmi 14C – 8 GB RAM + 256 GB storage – Temu</a>
+<br>(g‑601099945156395)
+</p>
+
+<p>
+Redmi 14C – 4 GB RAM + 128 GB storage (Egypt/Temu listing)
+<br>
+<a href="https://www.temu.com/at-ar/شاومي-ريدمي-14c-4gb-128gb-4g-lte" target="_blank">🔗 Redmi 14C – 4 GB RAM + 128 GB storage – Temu</a>
+<br>(g‑601099797181832)
+</p>
+
+<p>
+Redmi 14C – 8 GB + 256 GB (another Temu version)
+<br>
+<a href="https://www.temu.com/at-ar/شاومي-ريدمي-14c-8-256gb-نسخة-عالمية" target="_blank">🔗 Redmi 14C – 8 GB + 256 GB – Temu</a>
+<br>(g‑601100198188617)
+</p>
+
+</div>
+
+</body>
+</html>
